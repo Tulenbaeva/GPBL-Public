@@ -23,7 +23,7 @@ public class LoginTest extends BaseTest {
         loginPage.authOfLegalEntity();
     }
     @Test(description = "Деавторизация")
-    public void deAuthorization() throws InterruptedException {
+    public void deAuthorization() {
         sidebar.openProfilePage();
         profilePage.logOut();
         Assert.assertTrue(sidebar.isProfileButtonAbsent());

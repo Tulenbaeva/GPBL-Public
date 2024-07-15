@@ -1,10 +1,8 @@
 package core;
+
 import org.openqa.selenium.WebDriver;
-import org.testng.Assert;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Test;
 import ui.enums.ErrorMessages;
 import ui.pages.*;
 import ui.drivers.Driver;
@@ -29,12 +27,21 @@ abstract public class BaseTest {
         elementActions = new ElementActions();
         loginPage = new LoginPage();
         mainPage = new MainPage();
-        registrationOfIndividPage=new RegistrationOfIndividPage();
-        registrationOfLegalEntityPage=new RegistrationOfLegalEntityPage();
-        sidebar= new Sidebar();
-        auctionPage=new AuctionPage();
-        myBetsPage=new MyBetsPage();
-        profilePage=new ProfilePage();
+        registrationOfIndividPage = new RegistrationOfIndividPage();
+        registrationOfLegalEntityPage = new RegistrationOfLegalEntityPage();
+        sidebar = new Sidebar();
+        auctionPage = new AuctionPage();
+        myBetsPage = new MyBetsPage();
+        profilePage = new ProfilePage();
+
+    }
+    @BeforeMethod(groups = "auth")
+    public void authOfIndividual() throws InterruptedException {
+        mainPage.openMainPage()
+                .cancelInstallation()
+                .acceptCookies();
+        sidebar.openLoginPage();
+        loginPage.authOfIndividual();
     }
 //    @AfterClass
 //    public void deAuthorization() throws InterruptedException {

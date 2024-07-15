@@ -3,11 +3,7 @@ package ui.pages;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.awt.*;
-import java.time.Duration;
 import java.util.List;
 import java.util.Random;
 
@@ -58,13 +54,29 @@ public class AuctionPage extends BasePage {
         }
     }
 
-    public boolean isBidInHistoryOfTrading() throws InterruptedException {
-        elementActions.scrollBy(driver, 0, 300);
-        elementActions.waitElementToBeVisible(historyOfTradingDropDown);
-        elementActions.clickButton(historyOfTradingDropDown);
-        String firstRowText = firstRowInTradingHistory.getText();
-        return firstRowText.contains("Вы");
+    public boolean isBidInHistoryOfTrading() {
+        try {
+            elementActions.scrollBy(driver, 0, 300);
+            if (elementActions.isElementVisible(historyOfTradingDropDown)) {
+                return false;
+            }
+            elementActions.clickButton(historyOfTradingDropDown);
+            if (elementActions.isElementVisible(firstRowInTradingHistory)) {
+                return false; // Первая строка не стала видимой, возвращаем false
+            }
+            String firstRowText = firstRowInTradingHistory.getText();
+            return firstRowText.contains("Вы");
+        } catch (Exception e) {
+            System.err.println("Exception occurred: " + e.getMessage());
+            return false;
+        }
     }
+//        elementActions.scrollBy(driver, 0, 300);
+//        elementActions.waitElementToBeVisible(historyOfTradingDropDown);
+//        elementActions.clickButton(historyOfTradingDropDown);
+//        String firstRowText = firstRowInTradingHistory.getText();
+//        return firstRowText.contains("Вы");
+//    }
 
     public void addToFavorites() {
         elementActions.scrollToElements(lotItems);

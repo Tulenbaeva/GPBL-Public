@@ -100,7 +100,7 @@ public class ElementActions {
         wait.until(ExpectedConditions.visibilityOfAllElements(elements));
     }
 
-    public void waitElementToBeVisible(WebElement element) {
+    public void  waitElementToBeVisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfAllElements(element));
     }
@@ -125,9 +125,9 @@ public class ElementActions {
 
     public boolean isElementVisible(WebElement element) {
         try {
-            return element.isDisplayed();
+            return !element.isDisplayed();
         } catch (NoSuchElementException e) {
-            return false;
+            return true;
         }
     }
     public void scrollBy(WebDriver driver, int xOffset, int yOffset) {

@@ -4,7 +4,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ui.config.ConfigProvider;
 import ui.models.IndividualCredentials;
-import ui.models.LegalEntityCredentials;
 
 public class RegistrationOfIndividPage extends BasePage {
     @FindBy(xpath = "//div[@class='typography default css-1segv6e']")

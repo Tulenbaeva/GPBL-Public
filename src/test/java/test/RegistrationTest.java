@@ -24,7 +24,7 @@ public class RegistrationTest extends BaseTest {
     }
 
     @Test(description = "Регистрация с невалидным номером телефона(короче 10 цифр)")
-    public void registrationOfIndividualWithInvalidPhoneNum() throws InterruptedException {
+    public void registrationOfIndividualWithInvalidPhoneNum() {
         mainPage.openMainPage()
                 .acceptCookies()
                 .cancelInstallation();
