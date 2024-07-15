@@ -13,7 +13,6 @@ public class RegistrationTest extends BaseTest {
         registrationOfIndividPage.registrationOfIndividual();
         Assert.assertTrue(sidebar.getProfileLink().isDisplayed());
     }
-
     @Test(description = "Регистрация юр. лица (меню)")
     public void registrationOfLegalEntity() throws InterruptedException {
         mainPage.openMainPage()

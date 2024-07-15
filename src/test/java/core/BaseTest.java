@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import ui.enums.ErrorMessages;
 import ui.pages.*;
@@ -34,14 +35,6 @@ abstract public class BaseTest {
         auctionPage=new AuctionPage();
         myBetsPage=new MyBetsPage();
         profilePage=new ProfilePage();
-    }
-    @BeforeClass
-    public void authOfIndividual() throws InterruptedException {
-        mainPage.openMainPage()
-                .acceptCookies()
-                .cancelInstallation();
-        sidebar.openLoginPage();
-        loginPage.authOfIndividual();
     }
     @AfterClass
     public void deAuthorization() throws InterruptedException {

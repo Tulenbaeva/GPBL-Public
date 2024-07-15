@@ -59,8 +59,8 @@ public class AuctionPage extends BasePage {
     }
 
     public boolean isBidInHistoryOfTrading() throws InterruptedException {
+        elementActions.scrollBy(driver, 0, 300);
         elementActions.waitElementToBeVisible(historyOfTradingDropDown);
-        elementActions.scrollBy(driver, 0, 150);
         elementActions.clickButton(historyOfTradingDropDown);
         String firstRowText = firstRowInTradingHistory.getText();
         return firstRowText.contains("Вы");

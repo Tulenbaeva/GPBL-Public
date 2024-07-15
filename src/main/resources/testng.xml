@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="MyTestSuite">
+    <test name="MyTest">
+        <classes>
+            <class name="test.BiddingTest">
+                <methods>
+                    <include name="biddingTest" />
+                    <include name="addToFavoritesTest" />
+                </methods>
+            </class>
+        </classes>
+        <methods>
+            <include name="authOfIndividual" />
+        </methods>
+    </test>
+</suite>
