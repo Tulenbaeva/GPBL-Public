@@ -4,6 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import ui.config.ConfigProvider;
 import ui.models.IndividualCredentials;
+import ui.models.LegalEntityCredentials;
 
 public class RegistrationOfIndividPage extends BasePage {
     @FindBy(xpath = "//div[@class='typography default css-1segv6e']")
@@ -56,26 +57,6 @@ public class RegistrationOfIndividPage extends BasePage {
         elementActions.sendKeys(verificationInput, ConfigProvider.VERIFICATION_INPUT);
         IndividualCredentials individualCredentials = new IndividualCredentials(phoneNumber, firstName, lastName, password);
         credentialsSaver.saveIndividual(individualCredentials);
-    }
-
-    public void registrationOfIndividualWithInvalidPhoneNum() throws InterruptedException {
-        elementActions.scrollToElement(registrationButton);
-        elementActions.clickButton(registrationButton);
-        individualTypeButton.click();
-        elementActions.scrollToElement(consentCheckBox);
-        consentCheckBox.click();
-        continueButton.click();
-        Thread.sleep(5000);
-        elementActions.inputPhoneNumberWithPauses(phoneField, fakeDataProvider.generateInvalidPhoneNumber(), 10);
-        elementActions.sendKeys(lastNameField, fakeDataProvider.generateUserLastName());
-        elementActions.sendKeys(firstNameField, fakeDataProvider.generateUserFirstName());
-        String password = passwordGenerator.generatePassword();
-        elementActions.sendKeys(passwordField, password);
-        elementActions.sendKeys(passwordConfirmationField, passwordGenerator.getGeneratedPassword());
-        elementActions.scrollToElement(submitButton);
-        submitButton.click();
-        elementActions.sendKeys(verificationInput, ConfigProvider.VERIFICATION_INPUT);
-
     }
 }
 

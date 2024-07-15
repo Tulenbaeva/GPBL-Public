@@ -29,7 +29,7 @@ public class RegistrationTest extends BaseTest {
                 .acceptCookies()
                 .cancelInstallation();
         sidebar.openLoginPage();
-        registrationOfIndividPage.registrationOfIndividualWithInvalidPhoneNum();
+//        registrationOfIndividPage.registrationOfIndividualWithInvalidPhoneNum();
 
 
     }

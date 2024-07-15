@@ -36,9 +36,9 @@ abstract public class BaseTest {
         myBetsPage=new MyBetsPage();
         profilePage=new ProfilePage();
     }
-    @AfterClass
-    public void deAuthorization() throws InterruptedException {
-        sidebar.openProfilePage();
-        profilePage.logOut();
-    }
+//    @AfterClass
+//    public void deAuthorization() throws InterruptedException {
+//        sidebar.openProfilePage();
+//        profilePage.logOut();
+//    }
 }
