@@ -1,19 +1,37 @@
 package test;
-
 import core.BaseTest;
-import org.junit.Test;
-
+import org.junit.Assert;
+import org.testng.annotations.Test;
 
 public class RegistrationTest extends BaseTest {
-    @Test()
-    public void registration() throws InterruptedException {
-
+   @Test(description = "Регистрация физ лица (меню)")
+    public void registrationOfIndividual() throws InterruptedException {
         mainPage.openMainPage()
                 .acceptCookies()
-                .cancelInstallation()
-                .openLoginPage();
-        registrationPage.registrationOfIndividual();
+                .cancelInstallation();
+        sidebar.openLoginPage();
+        registrationOfIndividPage.registrationOfIndividual();
+        Assert.assertTrue(sidebar.getProfileLink().isDisplayed());
+    }
+
+    @Test(description = "Регистрация юр. лица (меню)")
+    public void registrationOfLegalEntity() throws InterruptedException {
+        mainPage.openMainPage()
+                .acceptCookies()
+                .cancelInstallation();
+        sidebar.openLoginPage();
+        registrationOfLegalEntityPage.registrationOfLegalEntity();
+        Assert.assertTrue(sidebar.getProfileLink().isDisplayed());
+    }
+
+    @Test(description = "Регистрация с невалидным номером телефона(короче 10 цифр)")
+    public void registrationOfIndividualWithInvalidPhoneNum() throws InterruptedException {
+        mainPage.openMainPage()
+                .acceptCookies()
+                .cancelInstallation();
+        sidebar.openLoginPage();
+        registrationOfIndividPage.registrationOfIndividualWithInvalidPhoneNum();
+
 
     }
 }
-
