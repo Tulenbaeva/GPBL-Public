@@ -9,32 +9,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0481bd50-1e97-45ed-81a1-f45f57e9c1ad" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/legalEntityRegistrationData.json" beforeDir="false" afterPath="$PROJECT_DIR$/legalEntityRegistrationData.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/config/ConfigProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/config/ConfigProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/config/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/config/PasswordGenerator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/ChromeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/ChromeWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/Driver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/EdgeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/EdgeWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/SafariWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/SafariWebDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/helper/CredentialsSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/helper/CredentialsSaver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/helper/ElementActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/helper/ElementActions.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/AuctionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/AuctionPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/HowToBuyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/HowToBuyPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/MainPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfIndividPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfIndividPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfLegalEntityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfLegalEntityPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/Sidebar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/AuctionPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/AuctionPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/MainPageTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,6 +26,19 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="REMOTE">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="GPBAPublic/master" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
