@@ -1,6 +1,7 @@
 package core;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.ITestResult;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import ui.enums.ErrorMessages;
@@ -35,17 +36,26 @@ abstract public class BaseTest {
         profilePage = new ProfilePage();
 
     }
-    @BeforeMethod(groups = "auth")
-    public void authOfIndividual() throws InterruptedException {
-        mainPage.openMainPage()
-                .cancelInstallation()
+
+    @BeforeMethod(onlyForGroups = {"authRequired"})
+    public void setUp() throws InterruptedException {
+        sidebar.openMainPage();
+        mainPage.cancelInstallation()
                 .acceptCookies();
         sidebar.openLoginPage();
         loginPage.authOfIndividual();
     }
+
+    public void authorize(ITestResult result) {
+        if (result.getMethod().getGroups() != null) {
+            result.getMethod().getGroups();
+        }
+    }
+}
 //    @AfterClass
-//    public void deAuthorization() throws InterruptedException {
+//    public void tearDown() throws InterruptedException {
 //        sidebar.openProfilePage();
 //        profilePage.logOut();
+//        driver.quit();
 //    }
-}
+

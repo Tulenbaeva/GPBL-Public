@@ -1,10 +1,8 @@
 package ui.helper;
-
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import ui.drivers.Driver;
-
 import java.time.Duration;
 import java.util.List;
 
@@ -20,8 +18,13 @@ public class ElementActions {
         new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15))
                 .until(ExpectedConditions.visibilityOf(element));
     }
+    public void waitElementsToBeDisplayed(List<WebElement> elements) {
+        new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15))
+                .until(ExpectedConditions.visibilityOf((WebElement) elements));
+    }
 
     public void clickButton(WebElement element) {
+        waitButtonToBeClickable(element);
         element.click();
     }
 
@@ -41,22 +44,15 @@ public class ElementActions {
         }
     }
 
-    public ElementActions writeNumber(WebElement element, int number) {
-        waitElementToBeDisplayed(element);
-        element.sendKeys(Integer.toString(number));
-        return this;
-    }
-
     public ElementActions scrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", element);
         return this;
     }
 
-    public ElementActions clickJavaScript(WebElement element) {
+    public void clickJavaScript(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].click(true);", element);
-        return this;
 
     }
 
@@ -96,11 +92,13 @@ public class ElementActions {
     }
 
     public void waitElementsToBeVisible(List<WebElement> elements) {
-        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
-        wait.until(ExpectedConditions.visibilityOfAllElements(elements));
+        WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(15));
+        for (WebElement element : elements) {
+            wait.until(ExpectedConditions.visibilityOf(element));
+        }
     }
 
-    public void  waitElementToBeVisible(WebElement element) {
+    public void waitElementToBeVisible(WebElement element) {
         WebDriverWait wait = new WebDriverWait(Driver.getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.visibilityOfAllElements(element));
     }
@@ -109,7 +107,7 @@ public class ElementActions {
         return element.getText();
     }
 
-    public ElementActions scrollToElements(List<WebElement> elements) {
+    public void scrollToElements(List<WebElement> elements) {
         if (elements != null && !elements.isEmpty()) {
             for (WebElement element : elements) {
                 scrollToElement(element);
@@ -120,7 +118,6 @@ public class ElementActions {
                 }
             }
         }
-        return this;
     }
 
     public boolean isElementVisible(WebElement element) {
@@ -130,13 +127,9 @@ public class ElementActions {
             return true;
         }
     }
+
     public void scrollBy(WebDriver driver, int xOffset, int yOffset) {
         JavascriptExecutor js = (JavascriptExecutor) driver;
         js.executeScript("window.scrollBy(" + xOffset + "," + yOffset + ")");
     }
 }
-
-
-
-
-

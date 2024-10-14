@@ -1,7 +1,5 @@
 package ui.config;
-
 import com.github.javafaker.Faker;
-
 import java.security.SecureRandom;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -42,7 +40,7 @@ public class PasswordGenerator {
             shuffledPassword.append(c);
         }
 
-        generatedPassword = shuffledPassword.toString();  // Сохраните сгенерированный пароль
+        generatedPassword = shuffledPassword.toString();
         return generatedPassword;
     }
 

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="AnalysisUIOptions">
+    <option name="SPLITTER_PROPORTION" value="0.276884" />
     <option name="ANALYZE_INJECTED_CODE" value="false" />
   </component>
   <component name="AutoImportSettings">
@@ -8,15 +9,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0481bd50-1e97-45ed-81a1-f45f57e9c1ad" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ui/helper/Auth.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/legalEntityRegistrationData.json" beforeDir="false" afterPath="$PROJECT_DIR$/legalEntityRegistrationData.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/config/ConfigProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/config/ConfigProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/config/PasswordGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/config/PasswordGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/ChromeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/ChromeWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/EdgeWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/EdgeWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/drivers/SafariWebDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/drivers/SafariWebDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/helper/CredentialsSaver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/helper/CredentialsSaver.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/helper/ElementActions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/helper/ElementActions.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/AuctionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/AuctionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/HowToBuyPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/HowToBuyPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/MainPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfIndividPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfIndividPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfLegalEntityPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/RegistrationOfLegalEntityPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ui/pages/Sidebar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ui/pages/Sidebar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/testng.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/core/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/core/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/test/BiddingTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/BiddingTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/AuctionPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/AuctionPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/test/MainPageTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/MainPageTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/test/RegistrationTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,6 +52,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/4.8.3/selenium-api-4.8.3.jar!/org/openqa/selenium/WebDriver.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar!/org/openqa/selenium/chrome/AddHasCasting.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-chrome-driver/4.8.3/selenium-chrome-driver-4.8.3.jar!/org/openqa/selenium/chrome/ChromeDriver.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,8 +83,11 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_directory_selection&quot;: &quot;C:/Intel/AuctionPublicGPBA/src/test/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
     &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -73,7 +98,7 @@
       <recent name="core" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.BiddingTest">
+  <component name="RunManager" selected="TestNG.AuctionPageTests.filterByDrive">
     <configuration name="LoginPageTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="AuctionPublicGPBA" />
       <extension name="coverage">
@@ -89,7 +114,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BiddingTest" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AuctionPageTests.filterByDrive" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AuctionPublicGPBA" />
       <extension name="coverage">
         <pattern>
@@ -98,25 +123,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BiddingTest" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BiddingTest.biddingTest" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="AuctionPublicGPBA" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.BiddingTest" />
-      <option name="METHOD_NAME" value="biddingTest" />
+      <option name="MAIN_CLASS_NAME" value="test.AuctionPageTests" />
+      <option name="METHOD_NAME" value="filterByDrive" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -124,7 +132,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.authOfIndividual" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AuctionPageTests.filterByEnginePower" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AuctionPublicGPBA" />
       <extension name="coverage">
         <pattern>
@@ -133,8 +141,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.LoginTest" />
-      <option name="METHOD_NAME" value="authOfIndividual" />
+      <option name="MAIN_CLASS_NAME" value="test.AuctionPageTests" />
+      <option name="METHOD_NAME" value="filterByEnginePower" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -142,7 +150,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.registrationOfIndividual" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AuctionPageTests.filterByEngineType" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AuctionPublicGPBA" />
       <extension name="coverage">
         <pattern>
@@ -151,8 +159,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.RegistrationTest" />
-      <option name="METHOD_NAME" value="registrationOfIndividual" />
+      <option name="MAIN_CLASS_NAME" value="test.AuctionPageTests" />
+      <option name="METHOD_NAME" value="filterByEngineType" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -160,7 +168,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RegistrationTest.registrationOfIndividualWithInvalidPhoneNum" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="AuctionPageTests.filterByGearbox" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="AuctionPublicGPBA" />
       <extension name="coverage">
         <pattern>
@@ -169,8 +177,26 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="test" />
-      <option name="MAIN_CLASS_NAME" value="test.RegistrationTest" />
-      <option name="METHOD_NAME" value="registrationOfIndividualWithInvalidPhoneNum" />
+      <option name="MAIN_CLASS_NAME" value="test.AuctionPageTests" />
+      <option name="METHOD_NAME" value="filterByGearbox" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuctionPageTests.filterByVolume" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="AuctionPublicGPBA" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="test" />
+      <option name="MAIN_CLASS_NAME" value="test.AuctionPageTests" />
+      <option name="METHOD_NAME" value="filterByVolume" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -180,11 +206,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.BiddingTest" />
-        <item itemvalue="TestNG.LoginTest.authOfIndividual" />
-        <item itemvalue="TestNG.BiddingTest.biddingTest" />
-        <item itemvalue="TestNG.RegistrationTest.registrationOfIndividual" />
-        <item itemvalue="TestNG.RegistrationTest.registrationOfIndividualWithInvalidPhoneNum" />
+        <item itemvalue="TestNG.AuctionPageTests.filterByDrive" />
+        <item itemvalue="TestNG.AuctionPageTests.filterByGearbox" />
+        <item itemvalue="TestNG.AuctionPageTests.filterByEnginePower" />
+        <item itemvalue="TestNG.AuctionPageTests.filterByEngineType" />
+        <item itemvalue="TestNG.AuctionPageTests.filterByVolume" />
       </list>
     </recent_temporary>
   </component>
@@ -209,17 +235,6 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/ui/pages/MainPage.java</url>
-          <line>36</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/AuctionPublicGPBA$BiddingTest_biddingTest.ic" NAME="BiddingTest.biddingTest Coverage Results" MODIFIED="1720531512505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

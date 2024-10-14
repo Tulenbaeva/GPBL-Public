@@ -1,13 +1,14 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="MyTestSuite">
-    <test name="MyTest">
+<suite name="TestSuite">
+    <test name="Test">
         <groups>
             <run>
                 <include name="auth"/>
             </run>
         </groups>
         <classes>
-            <class name="test.BiddingTest"/>
+            <class name="test.MainPageTests"/>
+            <class name="test.AuctionPageTests"></class>
         </classes>
     </test>
 </suite>

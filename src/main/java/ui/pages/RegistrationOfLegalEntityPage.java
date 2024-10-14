@@ -11,7 +11,7 @@ public class RegistrationOfLegalEntityPage extends BasePage {
     private WebElement legalEntityType;
     @FindBy(xpath = "//input[@type='checkbox']")
     private WebElement consentCheckBox;
-    @FindBy(xpath = "//button[@class='button css-1jc2v83']")
+    @FindBy(xpath = "//button[span[text()='Продолжить']]")
     private WebElement continueButton;
     @FindBy(xpath = "//input[@name='phone']")
     private WebElement phoneField;

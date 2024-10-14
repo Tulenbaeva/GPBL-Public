@@ -17,6 +17,12 @@ public class Driver {
                     break;
                 case "firefox":
                     driver = FireFoxWebDriver.loadFireFoxWebDriver();
+                    break;
+                    case "edge":
+                    driver = EdgeWebDriver.loadEdgeWebDriver();
+                    break;
+                    case "safari":
+                    driver = SafariWebDriver.loadSafariWebDriver();
                 default:
                     throw new IllegalArgumentException("You provided wrong Driver name");
             }

@@ -12,7 +12,7 @@ public class RegistrationOfIndividPage extends BasePage {
     private WebElement individualTypeButton;
     @FindBy(xpath = "//input[@class='checkbox-layout css-1wr05cf']")
     private WebElement consentCheckBox;
-    @FindBy(xpath = "//button[@class='button css-1jc2v83']")
+    @FindBy(xpath = "//button[span[text()='Продолжить']]")
     private WebElement continueButton;
     @FindBy(xpath = "//input[@class='input-wrapper-input']")
     private WebElement phoneField;

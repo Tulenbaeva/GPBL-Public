@@ -1,4 +1,4 @@
 package ui.pages;
 
-public class HowBuyPage {
+public class HowToBuyPage {
 }

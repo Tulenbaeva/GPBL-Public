@@ -5,6 +5,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import ui.config.ConfigProvider;
 
 import java.time.Duration;
 
@@ -13,7 +14,7 @@ import static ui.drivers.Driver.driver;
 public class Sidebar extends BasePage {
     @FindBy(xpath = "//div[text()='Главная']")
     private WebElement mainPageButton;
-    @FindBy(xpath = "//*[@id=\"__next\"]/div/div[1]/aside/div[2]/a[2]/div[2]")
+    @FindBy(xpath = "//a[@href='/auction']")
     private WebElement auctionPageButton;
     @FindBy(xpath = "//a[@href='/how-buy']")
     private WebElement howBuyPageButton;
@@ -30,14 +31,20 @@ public class Sidebar extends BasePage {
     @FindBy(xpath = "//div[@class='css-comszl']")
     private WebElement loginPageButton;
 
+    public void openMainPage() {
+        driver.get(ConfigProvider.URL);
+        new MainPage();
+    }
+
+
     public void openAuctionPage() {
         elementActions.clickViaJS(auctionPageButton);
         new AuctionPage();
     }
 
-    public HowBuyPage openHowBuyPage() {
+    public HowToBuyPage openHowBuyPage() {
         elementActions.clickButton(howBuyPageButton);
-        return new HowBuyPage();
+        return new HowToBuyPage();
     }
 
     public AboutCompanyPage openAboutCompanyPage() {
@@ -60,10 +67,10 @@ public class Sidebar extends BasePage {
         return new MyBetsPage();
     }
 
-    public ProfilePage openProfilePage() {
+    public void openProfilePage() {
         elementActions.scrollToElement(profilePageButton);
         elementActions.clickButton(profilePageButton);
-        return new ProfilePage();
+        new ProfilePage();
     }
 
     public void openLoginPage() {

@@ -3,31 +3,17 @@ import core.BaseTest;
 import org.testng.annotations.Test;
 import java.io.IOException;
 
-public class BiddingTest extends BaseTest {
-    @Test(description = "Обычная ставка")
-    public void biddingTest() throws InterruptedException {
-        sidebar.openAuctionPage();
-        auctionPage.bidding();
-        auctionPage.isBidInHistoryOfTrading();
-    }
-
-    @Test(description = "Добавить в избранное")
-    public void addToFavoritesTest() {
-        sidebar.openAuctionPage();
-        auctionPage.addToFavorites();
-        auctionPage.isItemColored();
-
-    }
-    @Test
+public class MainPageTests extends BaseTest {
+    @Test(description = "Проверка ссылок в разделе 'Подборка автомобилей'", groups = {"authRequired"})
     public void inspectAutoSelectionLinks() throws IOException {
         mainPage.inspectAutoSelectionLinks();
     }
-    @Test
+    @Test(description = "Смотреть все лоты", groups = {"authRequired"})
     public void checkViewAllLotsBtn(){
         mainPage.checkViewAllButton();
     }
-    @Test
-    public void inspectFooterSocialLinks() throws IOException, InterruptedException {
+    @Test(description = "Проверка ссылок на соцсети во футере", groups = {"authRequired"})
+    public void inspectFooterSocialLinks() {
         mainPage.inspectFooterSocialLinks();
     }
 }
